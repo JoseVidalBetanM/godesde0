@@ -1,8 +1,6 @@
 package main
 
 import (
-	"fmt"
-
 	"github.com/JoseVidalBetanM/godesde0/ejercicios"
 )
 
@@ -24,10 +22,16 @@ func main() {
 		fmt.Println("Esto es darwin")
 	default:
 		fmt.Printf("%s \n", os)
-	} */
+	}
 
 	numero, texto := ejercicios.Ejercicio("150")
 	fmt.Println(numero)
 	fmt.Println(texto)
+
+	teclado.OperaMatematica()
+
+	iteraciones.Ciclos() */
+
+	ejercicios.MiTabla()
 
 }
