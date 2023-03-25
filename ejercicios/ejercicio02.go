@@ -9,8 +9,9 @@ import (
 
 var numero int
 var err error
+var texto string
 
-func MiTabla() {
+func MiTabla() string {
 	scanner := bufio.NewScanner(os.Stdin)
 	for {
 		fmt.Println("numero para la tabla: ")
@@ -25,8 +26,10 @@ func MiTabla() {
 	}
 
 	for i := 1; i <= 10; i++ {
-		fmt.Printf("%d x %d = %d \n", numero, i, numero*i)
+		texto += fmt.Sprintf("%d x %d = %d \n", numero, i, numero*i)
 
 	}
+
+	return texto
 
 }

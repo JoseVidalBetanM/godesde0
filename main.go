@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/JoseVidalBetanM/godesde0/ejercicios"
+	"github.com/JoseVidalBetanM/godesde0/files"
 )
 
 func main() {
@@ -32,6 +32,12 @@ func main() {
 
 	iteraciones.Ciclos() */
 
-	ejercicios.MiTabla()
+	// fmt. Println(ejercicios.MiTabla())
+
+	// files.GrabaTabla()
+
+	// files.Append()
+
+	files.LeoArchivo()
 
 }
