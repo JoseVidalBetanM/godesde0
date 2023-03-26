@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/JoseVidalBetanM/godesde0/files"
+	"github.com/JoseVidalBetanM/godesde0/funciones"
 )
 
 func main() {
@@ -38,6 +38,12 @@ func main() {
 
 	// files.Append()
 
-	files.LeoArchivo()
+	// files.LeoArchivo()
+
+	// funciones.Calculos()
+
+	// funciones.LlamarClosure()
+
+	funciones.Exponencia(2)
 
 }
