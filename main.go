@@ -1,7 +1,7 @@
 package main
 
 import (
-	"github.com/JoseVidalBetanM/godesde0/arreglos_slices"
+	"github.com/JoseVidalBetanM/godesde0/users"
 )
 
 func main() {
@@ -50,6 +50,12 @@ func main() {
 
 	// arreglos_slices.MuestroSlices()
 
-	arreglos_slices.Capacidad()
+	// arreglos_slices.Capacidad()
+
+	// mapas.Mapitas()
+
+	// mapas.Campeonato()
+
+	users.AltaUsuario()
 
 }
