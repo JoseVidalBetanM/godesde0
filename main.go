@@ -62,7 +62,4 @@ func main() {
 	Pedro := new(modelos.Hombre)
 	e.HumanosRespirando(Pedro)
 
-	Maria := new(modelos.Mujer)
-	e.HumanosRespirando(Maria)
-
 }
