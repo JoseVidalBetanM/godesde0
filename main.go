@@ -1,8 +1,9 @@
 package main
 
 import (
-	e "github.com/JoseVidalBetanM/godesde0/ejer_interfaces"
-	"github.com/JoseVidalBetanM/godesde0/modelos"
+	"fmt"
+
+	"github.com/JoseVidalBetanM/godesde0/goroutines"
 )
 
 func main() {
@@ -59,7 +60,23 @@ func main() {
 
 	// users.AltaUsuario()
 
-	Pedro := new(modelos.Hombre)
-	e.HumanosRespirando(Pedro)
+	/*
+		Pedro := new(modelos.Hombre)
+		e.HumanosRespirando(Pedro)
+
+		Maria := new(modelos.Mujer)
+		e.HumanosRespirando(Maria)
+	*/
+
+	// defer_panic.Paniquito()
+
+	canal1 := make(chan bool)
+	go goroutines.Velocito("Jose Vidal", canal1)
+
+	fmt.Println("estoy aqui")
+	var x string
+	fmt.Scanln(&x)
+
+	<-canal1
 
 }
