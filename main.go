@@ -1,9 +1,7 @@
 package main
 
 import (
-	"fmt"
-
-	"github.com/JoseVidalBetanM/godesde0/goroutines"
+	webserver "github.com/JoseVidalBetanM/godesde0/Webserver"
 )
 
 func main() {
@@ -70,13 +68,18 @@ func main() {
 
 	// defer_panic.Paniquito()
 
-	canal1 := make(chan bool)
-	go goroutines.Velocito("Jose Vidal", canal1)
+	/*
+		canal1 := make(chan bool)
+		go goroutines.Velocito("Jose Vidal", canal1)
+		defer func() {
+			canal1 <- true
 
-	fmt.Println("estoy aqui")
-	var x string
-	fmt.Scanln(&x)
+		}()
+		fmt.Println("estoy aqui")
+		var x string
+		fmt.Scanln(&x)
+	*/
 
-	<-canal1
+	webserver.MiWebServer()
 
 }
